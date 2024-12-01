@@ -89,3 +89,31 @@ section h2 {
     margin-left: 15%;
     margin-right: 15%;
 }
+
+
+/* Style for Compare Button */
+button.compare {
+    background-color: #4CAF50; /* Green */
+}
+
+button.compare:hover {
+    background-color: #45a049; /* Darker Green */
+}
+
+button.favorite {
+    background-color: #80669d; /* Green */
+}
+button.favorite:hover {
+    background-color: #7149a0; /* Darker Green */
+}
+
+
+/* Style for Remove Button */
+button.remove {
+    background-color: #f44336; /* Red */
+}
+
+button.remove:hover {
+    background-color: #e53935; /* Darker Red */
+}
+

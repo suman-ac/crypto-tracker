@@ -33,8 +33,8 @@ function displayCryptoList(data) {
       <p>Price: $${crypto.current_price.toFixed(2)}</p>
       <p>24H Change: ${crypto.price_change_percentage_24h.toFixed(2)}%</p>
       <p>Market Cap: $${crypto.market_cap.toLocaleString()}</p>
-      <button onclick="addToComparison('${crypto.id}')">Compare</button>
-      <button onclick="addToFavorites('${crypto.id}', '${crypto.name}', '${crypto.symbol}', ${crypto.current_price}, ${crypto.price_change_percentage_24h}, ${crypto.market_cap})">Favorite</button>
+      <button class="compare" onclick="addToComparison('${crypto.id}')">Compare</button>
+      <button class="favorite" onclick="addToFavorites('${crypto.id}', '${crypto.name}', '${crypto.symbol}', ${crypto.current_price}, ${crypto.price_change_percentage_24h}, ${crypto.market_cap})">Favorite</button>
     `;
     cryptoListSection.appendChild(card);
   });
@@ -66,7 +66,7 @@ function updateComparisonSection() {
           <p>Price: $${crypto.current_price.toFixed(2)}</p>
           <p>24H Change: ${crypto.price_change_percentage_24h.toFixed(2)}%</p>
           <p>Market Cap: $${crypto.market_cap.toLocaleString()}</p>
-          <button onclick="removeFromComparison('${crypto.id}')">Remove</button>
+          <button class="remove" onclick="removeFromComparison('${crypto.id}')">Remove</button>
         `;
         comparisonContainer.appendChild(card);
       });
