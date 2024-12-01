@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+main {
+    margin-top: 20px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.crypto-card,
+.comparison-card,
+.favorite-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(25% - 15px);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.crypto-card h3,
+.comparison-card h3,
+.favorite-card h3 {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.crypto-card p,
+.comparison-card p,
+.favorite-card p {
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+button {
+    padding: 7px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Section Header */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
