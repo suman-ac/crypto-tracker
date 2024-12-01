@@ -122,7 +122,7 @@ function updateFavoritesSection() {
       <p>Price: $${fav.current_price.toFixed(2)}</p>
       <p>24H Change: ${fav.price_change_percentage_24h.toFixed(2)}%</p>
       <p>Market Cap: $${fav.market_cap.toLocaleString()}</p>
-      <button onclick="removeFromFavorites('${fav.id}')">Remove</button>
+      <button class="remove" onclick="removeFromFavorites('${fav.id}')">Remove</button>
     `;
     favoritesContainer.appendChild(card);
   });
